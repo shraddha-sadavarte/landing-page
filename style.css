@@ -11,8 +11,11 @@ html, body{
     width: 100%;
 }
 
+/* first page */
+
 .one{
     background-color: rgb(50, 47, 47);
+    padding-bottom: 20px;
 }
 
 .first{
@@ -184,6 +187,28 @@ html, body{
     color: black;
 }
 
+/* second page */
+.two{
+    background-color: black;
+    height: 20vh;
+    padding: 20px;
+}
+
+.two h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.two p{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(228, 228, 9);
+}
+
+.two h1 span{
+    color: rgb(228, 228, 9);
+}
+
  /* Media Query for Tablet for 768px */
 @media screen and (min-width: 768px) {
     .first{
@@ -202,6 +227,11 @@ html, body{
     .box{
         height: 50px;
         width: 70px;
+        font-size: 18px;
+    }
+
+    .box1{
+        font-size: 19px;
     }
     
     .learning{
@@ -221,7 +251,16 @@ html, body{
         font-size: 1.5rem;
     }
 
+    .two h1{
+        font-size: 2.3rem;
+    }
+    
+    .two p{
+        font-size: 1.8rem;
+    }
+
 }
+
 
 /* Tablet media query for min 1024px and max 1280px*/
 @media screen and (min-width: 1024px) and (max-width: 1280px){
@@ -261,6 +300,14 @@ html, body{
 
     .access p{
         font-size: 2rem;
+    }
+
+    .two h1{
+        font-size: 2.2rem;
+    }
+    
+    .two p{
+        font-size: 1.7rem;
     }
 }
 
@@ -331,6 +378,14 @@ html, body{
     .access span{
         font-size: 1.5vh;
     }
+
+    .two h1{
+        font-size: 1.2rem;
+    }
+    
+    .two p{
+        font-size: 1rem;
+    }
 }
 
 /* Media queries for min 430px and max 550px*/
@@ -395,6 +450,14 @@ html, body{
 
     .access span{
         font-size: 1.5vh;
+    }
+    
+    .two h1{
+        font-size: 2rem;
+    }
+    
+    .two p{
+        font-size: 1.5rem;
     }
 }
 
