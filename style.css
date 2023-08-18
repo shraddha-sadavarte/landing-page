@@ -99,7 +99,7 @@ html, body{
 .box{
     background-color: rgb(152, 149, 149);
     height: 30px;
-    width: 60px;
+    width: 50px;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -269,6 +269,8 @@ html, body{
     color: black;
 }
 
+/* fourth page */
+
 .four{
     height: auto;
     width: 100vw;
@@ -341,6 +343,63 @@ html, body{
     color: black;
 }
 
+/* Fifth page*/
+.five{
+    height: auto;
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+}
+
+.five-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.card-five{
+    height: 45vh;
+    width: 80vh;
+    background-color: rgb(255, 238, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+}
+
+.card-five img{
+    height: 5vh;
+    width: 5vh;
+}
+
+.content-card-five{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-card-five .headline{
+    font-size: 5vh;
+    color: black;
+}
+
+.content-card-five .headline span{
+    color: red;
+}
+
+.content-card-five p b{
+    color: black;
+}
+
+.content-card-five p{
+    color: black;
+    font-size: 3.2vh;
+}
+
  /* 
  Media query started
  Media Query for Tablet for min width 768px and max width 950px
@@ -384,6 +443,10 @@ html, body{
 
     .access p{
         font-size: 1.5rem;
+    }
+
+    .two{
+        height: 14vh;
     }
 
     .two h1{
@@ -443,6 +506,19 @@ html, body{
 
     .info-people p{
         font-size: 1.8vh;
+    }
+
+    .card-five{
+        height: 40vh;
+        width: 75vh;
+    }
+
+    .card-five .headline{
+        font-size: 4vh;
+    }
+
+    .card-five p{
+        font-size: 3vh;
     }
     
 }
@@ -577,6 +653,10 @@ html, body{
         font-size: 1.5vh;
     }
 
+    .two{
+        height: 18vh;
+    }
+
     .two h1{
         font-size: 1.2rem;
     }
@@ -630,6 +710,18 @@ html, body{
         padding-top: 2px;
         padding-right: 2px;
         font-size: 1.7vh;
+    }
+
+    .card-five{
+        flex-direction: column;
+    }
+
+    .content-card-five .headline{
+        font-size: 2.5vh;
+    }
+
+    .content-card-five p{
+        font-size: 2vh;
     }
     
 }
@@ -759,6 +851,14 @@ html, body{
         padding-top: 5px;
         padding-right: 5px;
         font-size: 2vh;
+    }
+
+    .card-five{
+        flex-direction: column;
+    }
+
+    .content-card-five .headline{
+        font-size: 4vh;
     }
 }
 

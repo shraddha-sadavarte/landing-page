@@ -60,7 +60,7 @@ setInterval(() => {
     clock1();
 }, 1000)
 
-//second clock
+//third clock
 //timer
 const endDate2= "31 August 2023 12:00 AM";
 const inputs2 = document.querySelectorAll("input[type=email]");
@@ -89,4 +89,35 @@ clock2();
 
 setInterval(() => {
     clock2();
+}, 1000)
+
+//four clock
+//timer
+const endDate3= "31 August 2023 12:00 AM";
+const inputs3 = document.querySelectorAll(".clock4");
+
+const clock3 = () =>{
+    const end3 = new Date(endDate3);
+    const now3 = new Date();
+    const diff3 = (end3 - now3)/1000;
+
+    if(diff3 < 0) return;
+
+    //convert ito days
+    inputs3[0].value = Math.floor(diff3 / 3600 / 24);
+
+    //convert into hours
+    inputs3[1].value = Math.floor(diff3 / 3600 % 24);
+
+    //convert into minutes
+    inputs3[2].value = Math.floor(diff3 / 60 % 60);
+
+    //convert into seconds
+    inputs3[3].value = Math.floor(diff3 % 60);
+}
+
+clock3();
+
+setInterval(() => {
+    clock3();
 }, 1000)
