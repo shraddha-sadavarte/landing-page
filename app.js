@@ -153,3 +153,34 @@ clock4();
 setInterval(() => {
     clock4();
 }, 1000)
+
+//six clock
+//timer
+const endDate5= "31 August 2023 12:00 AM";
+const inputs5 = document.querySelectorAll(".clock6");
+
+const clock5 = () =>{
+    const end5 = new Date(endDate5);
+    const now5 = new Date();
+    const diff5 = (end5- now5)/1000;
+
+    if(diff5 < 0) return;
+
+    //convert ito days
+    inputs5[0].value = Math.floor(diff5 / 3600 / 24);
+
+    //convert into hours
+    inputs5[1].value = Math.floor(diff5 / 3600 % 24);
+
+    //convert into minutes
+    inputs5[2].value = Math.floor(diff5 / 60 % 60);
+
+    //convert into seconds
+    inputs5[3].value = Math.floor(diff5 % 60);
+}
+
+clock5();
+
+setInterval(() => {
+    clock5();
+}, 1000)

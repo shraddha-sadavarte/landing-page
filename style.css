@@ -507,6 +507,75 @@ html, body{
     background-image: url(/images/eight\ bg.png);
     background-size: cover;
     height: 80%;
+    padding-top: 20px;
+}
+
+.eight-header{
+    text-align: center;
+}
+
+.eight-header h1{
+    font-size: 7vh;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.wp p{
+    font-size: 4.5vh;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* footer */
+.footer{
+    height: 50%;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img img{
+    height: 100px;
+    width: 200px;
+}
+
+.footer-text{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-text a{
+    color: blue;
+    font-size: 2vh;
+}
+
+.footer-text2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-text2 span{
+    color: black;
+    font-size: 3vh;
 }
 
  /* 
@@ -674,7 +743,36 @@ html, body{
     .content-card-seven p{
         font-size: 3vh;
     }
-    
+
+    .eight{
+        height: 60%;
+    }
+
+    .eight-header h1{
+        font-size: 5vh;
+    }
+
+    .wp h2{
+        font-size: 3vh;
+    }
+
+    .footer{
+        height: 40%;
+    }
+
+    .footer-img img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .footer-text2{
+        margin-top: 40px;
+    }
+
+    .footer-text2 span{
+        font-size: 3vh;
+    }
+
 }
 
 
@@ -937,6 +1035,28 @@ html, body{
     .content-card-seven .headline-seven{
         font-size: 3.5vh;
     }
+
+    .eight{
+        height: 70%;
+    }
+
+    .eight-header h1{
+        font-size: 4vh;
+    }
+
+    .wp p{
+        font-size: 3vh;
+    }
+
+    .wp h2{
+        font-size: 2vh;
+    }
+
+    .footer-img img{
+        height: 100px;
+        width: 140px;
+    }
+
     
 }
 
@@ -1103,5 +1223,18 @@ html, body{
     .content-card-seven .headline-seven{
         font-size: 3.5vh;
     }
+
+    .eight{
+        height: 70%;
+    }
+
+    .eight-header h1{
+        font-size: 3vh;
+    }
+
+    .wp h2{
+        font-size: 3vh;
+    }
+
 }
 
