@@ -59,3 +59,34 @@ clock1();
 setInterval(() => {
     clock1();
 }, 1000)
+
+//second clock
+//timer
+const endDate2= "31 August 2023 12:00 AM";
+const inputs2 = document.querySelectorAll("input[type=email]");
+
+const clock2 = () =>{
+    const end2 = new Date(endDate2);
+    const now2 = new Date();
+    const diff2 = (end2 - now2)/1000;
+
+    if(diff2 < 0) return;
+
+    //convert ito days
+    inputs2[0].value = Math.floor(diff2 / 3600 / 24);
+
+    //convert into hours
+    inputs2[1].value = Math.floor(diff2 / 3600 % 24);
+
+    //convert into minutes
+    inputs2[2].value = Math.floor(diff2 / 60 % 60);
+
+    //convert into seconds
+    inputs2[3].value = Math.floor(diff2 % 60);
+}
+
+clock2();
+
+setInterval(() => {
+    clock2();
+}, 1000)

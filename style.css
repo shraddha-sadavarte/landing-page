@@ -117,7 +117,7 @@ html, body{
 
 .box1{
     margin-bottom: 90%;
-    padding-bottom: 40px;
+    padding-bottom: 40px; 
     padding-left: 20px;
 } 
 
@@ -211,7 +211,7 @@ html, body{
 
 /* third page */
 .three{
-    height: 85%;
+    height: 100vh;
     width: 100%;
     background-color: white;
     padding: 10px;
@@ -269,8 +269,83 @@ html, body{
     color: black;
 }
 
- /* Media Query for Tablet for 768px */
-@media screen and (min-width: 768px) {
+.four{
+    height: auto;
+    width: 100vw;
+    background-image: url(./images/page4bg.png);
+    background-size: cover;
+}
+
+.head{
+    padding: 25px;
+}
+
+.head h1{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.people-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-thoughts{
+    background-color: white;
+    height: 30vw;
+    width: 20vw;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.card-thoughts::-webkit-scrollbar{
+    display: none;
+}
+
+.imgPeople{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPeople img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.name-people{
+    padding-top: 20px;
+}
+
+.name-people h4{
+    color: black;
+}
+
+.info-people{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.info-people span{
+    color: black;
+    background-color: yellow;
+}
+
+.info-people p{
+    color: black;
+}
+
+ /* 
+ Media query started
+ Media Query for Tablet for min width 768px and max width 950px
+ */
+@media screen and (min-width: 768px)and (max-width: 950px) {
     .first{
         font-size: 3.5vh;
     }
@@ -319,6 +394,57 @@ html, body{
         font-size: 1.8rem;
     }
 
+    .card{
+        height: 20vh;
+        width: 40vh;
+    }
+
+    .card h1{
+        font-size: 3vh;
+    }
+
+    .card i{
+        font-size: 3vh;
+    }
+
+    .card p{
+        font-size: 2.5vh;
+    }
+
+    .btn{
+        height: 4vh;
+        font-size: 2vh;
+    }
+
+    .head{
+        padding: 5vh;
+    }
+    
+    .head h1{
+        font-size: 2rem;
+    }
+    
+    .people-card{
+        flex-direction: column;
+    }
+    
+    .card-thoughts{
+        height: 25vh;
+        width: 60vh;
+    }
+
+    .name-people{
+        padding: 2px;
+    }
+
+    .name-people h4{
+        font-size: 3vh;
+    }
+
+    .info-people p{
+        font-size: 1.8vh;
+    }
+    
 }
 
 
@@ -372,7 +498,7 @@ html, body{
 }
 
 /* Media queries for min 280px and max 393px*/
-@media screen and (min-width: 280px) and (max-width: 395px){
+@media screen and (min-width: 280px) and (max-width: 425px){
     .first{
         font-size: 2.5vh;
     }
@@ -387,31 +513,43 @@ html, body{
     }
 
     .offer{
-        height: 90vw;
-        width: 25vh;
+        height: 9vh;
+        width: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
+    .offer1 h1{
+        font-size: 2vh;
+    }
     
     .offer1{
         flex-direction: column;
     }
+
+    .btn{
+        width: 90%;
+        height: 4vh;
+        font-size: 1.5vh;
+        font-weight: 600;
+    }
     
     .line{
-        font-size: 1rem;
+        font-size: 2vh;
     }
 
     .box{
-        width: 60px;
-        font-size: 15px;
+        height: 30px;
+        width: 50px;
+        font-size: 2vh;
     }
 
     .box1{
-        font-size: 15px;
+        font-size: 2vh;
     }
-    
+
     .learning{
          margin-top: -20vh; 
     }
@@ -448,22 +586,52 @@ html, body{
     }
 
     .card{
-        height: 30vh;
+        height: 18vh;
+        width: 35vh;
+        padding: 5px;
     }
 
     .card h1{
-        font-size: 3vh;
-    }
-
-    .card p{
         font-size: 2vh;
     }
 
-    .btn{
-        width: 90%;
-        height: 50px;
-        font-size: 1.5rem;
+    .card p{
+        font-size: 1.5vh;
     }
+    
+    .head{
+        padding: 2vh;
+    }
+    
+    .head h1{
+        font-size: 2vh;
+    }
+    
+    .people-card{
+        flex-direction: column;
+    }
+    
+    .card-thoughts{
+        height: 30vh;
+        width: 35vh;
+    }
+
+    .imgPeople img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .name-people{
+        padding-top: 2px;
+        font-size: 2vh;
+    }
+    
+    .info-people{
+        padding-top: 2px;
+        padding-right: 2px;
+        font-size: 1.7vh;
+    }
+    
 }
 
 /* Media queries for min 430px and max 550px*/
@@ -536,6 +704,61 @@ html, body{
     
     .two p{
         font-size: 1.5rem;
+    }
+
+    .card{
+        height: 18vh;
+        width: 50vh;
+        padding: 2px;
+    }
+
+    .card h1{
+        font-size: 2.5vh;
+    }
+
+    .card p{
+        font-size: 1.5vh;
+    }
+
+    .btn{
+        width: 80%;
+        height: 4vh;
+        font-size: 1.5vh;
+        font-weight: 600;
+    }
+    
+    
+    .head{
+        padding: 4vh;
+    }
+    
+    .head h1{
+        font-size: 4vh;
+    }
+    
+    .people-card{
+        flex-direction: column;
+    }
+    
+    .card-thoughts{
+        height: 35vh;
+        width: 55vh;
+    }
+
+    .imgPeople img{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .name-people{
+        padding-top: 5px;
+        font-size: 3vh;
+    }
+    
+    .info-people{
+        padding-top: 5px;
+        padding-right: 5px;
+        font-size: 2vh;
     }
 }
 
