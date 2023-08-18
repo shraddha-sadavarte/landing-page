@@ -400,6 +400,49 @@ html, body{
     font-size: 3.2vh;
 }
 
+/* sixth page started */
+.six{
+    background-color: rgb(215, 227, 239);
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.six-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+.six-card-container img{
+    height: 500px;
+    width: 400px;
+}
+
+.sub-card-six{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-card-six h3{
+    color: black;
+    font-size: 6vh;
+}
+
+.sub-card-six h1{
+    font-size: 6vh;
+    color: red;
+}
+
+.sub-card-six p{
+    color: black;
+    font-size: 3.5vh;
+    word-spacing: 5px;
+}
+
  /* 
  Media query started
  Media Query for Tablet for min width 768px and max width 950px
@@ -519,6 +562,24 @@ html, body{
 
     .card-five p{
         font-size: 3vh;
+    }
+
+    .six-card-container{
+        flex-direction: column;
+    }
+    
+    .sub-card-six h3{
+        font-size: 4vh;
+    }
+    
+    .sub-card-six h1{
+        font-size: 5vh;
+    }
+    
+    .sub-card-six p{
+        color: black;
+        font-size: 3vh;
+        word-spacing: 3px;
     }
     
 }
@@ -723,6 +784,29 @@ html, body{
     .content-card-five p{
         font-size: 2vh;
     }
+
+    .six-card-container{
+        flex-direction: column;
+    }
+
+    .six-card-container img{
+        height: 250px;
+        width: 200px;
+    }
+    
+    .sub-card-six h3{
+        font-size: 4vh;
+    }
+    
+    .sub-card-six h1{
+        font-size: 5vh;
+    }
+    
+    .sub-card-six p{
+        color: black;
+        font-size: 3vh;
+        word-spacing: 3px;
+    }
     
 }
 
@@ -859,6 +943,19 @@ html, body{
 
     .content-card-five .headline{
         font-size: 4vh;
+    }
+
+    .six-card-container{
+        flex-direction: column;
+    }
+
+    .six-card-container img{
+        height: 300px;
+        width: 250px;
+    }
+    
+    .sub-card-six p{
+        font-size: 3vh;
     }
 }
 
