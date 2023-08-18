@@ -84,7 +84,6 @@ html, body{
 
 .clock{
     text-align: center;
-    height: 40vh;
     width: 30%;
     margin: auto;
     margin-top: 3vh;
@@ -116,8 +115,6 @@ html, body{
 }
 
 .box1{
-    margin-bottom: 90%;
-    padding-bottom: 40px; 
     padding-left: 20px;
 } 
 
@@ -443,6 +440,75 @@ html, body{
     word-spacing: 5px;
 }
 
+/* seventh page */
+.seven{
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.seven-header{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.seven-header p{
+    color: black;
+    font-size: 4vh;
+}
+
+.seven-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.seven-card{
+    background-color: white;
+    height: auto;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 40px 0;
+    box-shadow: 0 0 5px 6px rgb(231, 226, 226);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.seven-card img{
+    height: 25px;
+    width: 25px;
+}
+
+.content-card-seven{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.headline-seven{
+    font-size: 4vh;
+    color: black;
+}
+
+.content-card-seven p{
+    color: black;
+}
+
+/* eighth page */
+.eight{
+    width: 100%;
+    background-image: url(/images/eight\ bg.png);
+    background-size: cover;
+    height: 80%;
+}
+
  /* 
  Media query started
  Media Query for Tablet for min width 768px and max width 950px
@@ -581,6 +647,33 @@ html, body{
         font-size: 3vh;
         word-spacing: 3px;
     }
+
+    .seven-header{
+        padding: 5px;
+    }
+
+    .seven-header p{
+        font-size: 4vh;
+    }
+
+    .seven-card{
+        padding: 20px;
+        width: 70vh;
+        flex-direction: column;
+    }
+
+    .seven-card img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .content-card-seven .headline-seven{
+        font-size: 4vh;
+    }
+
+    .content-card-seven p{
+        font-size: 3vh;
+    }
     
 }
 
@@ -632,6 +725,26 @@ html, body{
     .two p{
         font-size: 1.7rem;
     }
+
+    .seven-header{
+        padding: 5px;
+    }
+
+    .seven-header p{
+        font-size: 4vh;
+    }
+
+    .seven-card{
+        padding: 20px;
+        width: 70vh;
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    .content-card-seven .headline-seven{
+        font-size: 4vh;
+    }
+    
 }
 
 /* Media queries for min 280px and max 393px*/
@@ -807,6 +920,23 @@ html, body{
         font-size: 3vh;
         word-spacing: 3px;
     }
+
+    .seven-header{
+        padding: 2px;
+    }
+
+    .seven-header p{
+        font-size: 2.3vh;
+    }
+
+    .seven-card{
+        padding: 20px;
+        width: 40vh;
+    }
+
+    .content-card-seven .headline-seven{
+        font-size: 3.5vh;
+    }
     
 }
 
@@ -956,6 +1086,22 @@ html, body{
     
     .sub-card-six p{
         font-size: 3vh;
+    }
+
+    .seven-header {
+        padding: 5px;
+    }
+
+    .seven-header p{
+        font-size: 3vh;
+    }
+
+    .seven-card{
+        padding: 20px;
+    }
+
+    .content-card-seven .headline-seven{
+        font-size: 3.5vh;
     }
 }
 
