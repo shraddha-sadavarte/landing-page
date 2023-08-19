@@ -13,6 +13,10 @@ html, body{
 
 /* first page */
 
+/* .header-fixed{
+    display: none;
+} */
+
 .one{
     background-color: rgb(50, 47, 47);
     padding-bottom: 20px;
@@ -565,7 +569,7 @@ html, body{
 
 .footer-text a{
     color: blue;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 .footer-text2{
@@ -583,6 +587,12 @@ html, body{
  Media Query for Tablet for min width 768px and max width 950px
  */
 @media screen and (min-width: 768px)and (max-width: 950px) {
+   /* .header-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+   } */
+
     .first{
         font-size: 3.5vh;
     }
@@ -607,7 +617,7 @@ html, body{
     }
     
     .learning{
-        margin-top: -25vh;
+        margin-top: 15vh;
     }
 
     .sentences{
@@ -765,12 +775,16 @@ html, body{
         width: 200px;
     }
 
+    .footer-text a{
+        font-size: 2.5vh;
+    }
+
     .footer-text2{
         margin-top: 40px;
     }
 
     .footer-text2 span{
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
 
 }
@@ -801,7 +815,7 @@ html, body{
     }
     
     .learning{
-         margin-top: -18vh; 
+         margin-top: 18vh; 
     }
 
     .sentences p{
@@ -841,6 +855,14 @@ html, body{
 
     .content-card-seven .headline-seven{
         font-size: 4vh;
+    }
+
+    .footer-text a{
+        font-size: 3.5vh;
+    }
+
+    .footer-text2 span{
+        font-size: 3.5vh;
     }
     
 }
@@ -899,7 +921,7 @@ html, body{
     }
 
     .learning{
-         margin-top: -20vh; 
+         margin-top: 15vh; 
     }
 
     .sentences{
@@ -1057,6 +1079,14 @@ html, body{
         width: 140px;
     }
 
+    .footer-text a{
+        font-size: 2vh;
+    }
+
+    .footer-text2 span{
+        font-size: 2.5vh;
+    }
+
     
 }
 
@@ -1099,7 +1129,7 @@ html, body{
     }
     
     .learning{
-         margin-top: -15vh; 
+         margin-top: 15vh; 
     }
 
     .sentences{
@@ -1234,6 +1264,18 @@ html, body{
 
     .wp h2{
         font-size: 3vh;
+    }
+
+    .footer-text a{
+        font-size: 2.5vh;
+    }
+
+    .footer-text2{
+        margin-top: 60px;
+    }
+
+    .footer-text2 span{
+        font-size: 2.5vh;
     }
 
 }
