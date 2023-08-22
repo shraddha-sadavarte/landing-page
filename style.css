@@ -191,7 +191,7 @@ html, body{
 /* second page */
 .two{
     background-color: black;
-    height: 20vh;
+    height: 22vh;
     padding: 20px;
 }
 
@@ -273,6 +273,7 @@ html, body{
 /* fourth page */
 
 .four{
+    margin-top: 50px;
     height: auto;
     width: 100vw;
     background-image: url(./images/page4bg.png);
@@ -634,11 +635,11 @@ html, body{
     }
 
     .two{
-        height: 14vh;
+        height: 20vh;
     }
 
     .two h1{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     
     .two p{
@@ -646,7 +647,7 @@ html, body{
     }
 
     .card{
-        height: 20vh;
+        height: 24vh;
         width: 40vh;
     }
 
@@ -680,7 +681,7 @@ html, body{
     }
     
     .card-thoughts{
-        height: 25vh;
+        height: 35vh;
         width: 60vh;
     }
 
@@ -755,7 +756,7 @@ html, body{
     }
 
     .eight{
-        height: 60%;
+        height: 80%;
     }
 
     .eight-header h1{
@@ -867,7 +868,7 @@ html, body{
     
 }
 
-/* Media queries for min 280px and max 393px*/
+/* Media queries for min 280px and max 425px*/
 @media screen and (min-width: 280px) and (max-width: 425px){
     .first{
         font-size: 2.5vh;
@@ -883,12 +884,16 @@ html, body{
     }
 
     .offer{
-        height: 9vh;
+        height: 10.5vh;
         width: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .offer p{
+        font-size: 1vh;
     }
 
     .offer1 h1{
@@ -1090,8 +1095,8 @@ html, body{
     
 }
 
-/* Media queries for min 430px and max 550px*/
-@media screen and (min-width: 430px) and (max-width: 550px){
+/* Media queries for min 430px and max 767px*/
+@media screen and (min-width: 430px) and (max-width: 566px){
     .first{
         font-size: 3vh;
     }
@@ -1106,9 +1111,13 @@ html, body{
     }
 
     .offer{
-        height: 10vh;
+        height: 11vh;
         width: 90vw;
         padding: 10px;
+    }
+
+    .offer1 h1{
+        font-size: 4vh;
     }
     
     .line{
@@ -1147,7 +1156,8 @@ html, body{
     }
 
     .access p{
-        font-size: 2vh;
+        font-size: 1.5vh;
+        font-weight: 400;
     }
 
     .access span{
@@ -1155,15 +1165,15 @@ html, body{
     }
     
     .two h1{
-        font-size: 2rem;
+        font-size: 4.4vh;
     }
     
     .two p{
-        font-size: 1.5rem;
+        font-size: 3vh;
     }
 
     .card{
-        height: 18vh;
+        height: 20vh;
         width: 50vh;
         padding: 2px;
     }
@@ -1181,6 +1191,10 @@ html, body{
         height: 4vh;
         font-size: 1.5vh;
         font-weight: 600;
+    }
+
+    .four{
+        margin-top: 80px;
     }
     
     
